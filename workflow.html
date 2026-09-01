@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shardborne — Workflow & Assets</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav class="site-nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">Shardborne</a>
+    <div class="nav-links">
+      <a href="story.html">Lore</a>
+      <a href="workflow.html" class="active">Workflow & Assets</a>
+      <a href="gdd.html">Design Doc</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero compact">
+  <div class="wrap">
+    <div class="hero-eyebrow"><span class="rune">◆</span>Workflow & Assets</div>
+    <h1>Wie gearbeitet wird</h1>
+    <p class="hero-sub">Ein Einblick in die aktuelle Struktur und wie du mitwirken koenntest.</p>
+  </div>
+</header>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">01 — Visueller Stil</div>
+      <div class="section-title">Lesbar, selbst im Chaos</div>
+    </div>
+    <p class="lede">Hoher Kontrast, klare Silhouetten, helle Kerne mit dunklen Umrissen. Jedes Element hat seine eigene Identitaet durch Form und Farbe — auch in den dichtesten Bullet-Hell-Momenten muss sofort erkennbar sein, was gefaehrlich ist.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">02</div>
+      <div class="section-title">Die Basis: Asset-Pack</div>
+    </div>
+    <div class="body-col">
+      <p>Das Spiel basiert aktuell auf <a href="https://rafaelmatos.itch.io/epic-rpg-world-collection" target="_blank" rel="noopener" style="color: var(--lightning); text-decoration: underline;">Epic RPG World Complete Collection von RafaelMatos</a>. Das ist die visuelle Grundlage fuer Tiles, Props und Basis-Sprites.</p>
+      <p>Ziel ist <strong>nicht</strong>, dieses Pack zu ersetzen — sondern es gezielt mit eigenen Sprites, Grafiken und Animationen zu erweitern, vor allem dort, wo es am spezifischsten fuer Shardborne werden muss: Boss- und Gegneranimationen, Kampfeffekte, und punktuell Props fuer einzelne Themenbereiche.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">03</div>
+      <div class="section-title">Das Graustufen-zu-Palette-System</div>
+    </div>
+    <div class="body-col">
+      <p>Das sind alle Effekte, Objekte und Faehigkeiten, die theoretisch elementar geformt werden koennen, damit sie spaeter in jedes Element uebersetzt werden koennen. Das haelt die visuelle Sprache ueber alle Elemente hinweg konsistent und macht es einfach, dieselbe Animation in mehreren elementaren Varianten anzubieten.</p>
+
+      <div class="note-box">
+        Der Artist zeichnet die Grundform in Graustufen (Helligkeit = Intensitaet) — die Farbgebung passiert danach automatisch ueber das Palette-System. <strong>Wichtig:</strong> Das gilt nur fuer bestimmte Sprite-/VFX-Kategorien, nicht fuer alle visuellen Elemente im Spiel.
+      </div>
+
+      <h4>Wie es funktioniert</h4>
+      <p>Der Artist zeichnet die Grundform komplett in Graustufen. Helligkeit steht dabei fuer Energie bzw. Intensitaet — der energetischste, intensivste Punkt einer Animation ist am hellsten, Raender und abklingende Bereiche sind dunkler. Die Transparenz (Alpha) des Sprites bleibt dabei erhalten und wird vom System nicht veraendert.</p>
+      <p>Aus diesem Graustufenbild liest das System pro Pixel die Helligkeit aus und ordnet sie einer Farbe auf einer <strong>Paletten-Rampe</strong> zu — eine geordnete Farbreihe von dunkel nach hell. Das Ergebnis: Die Form bleibt exakt gleich, aber die Farbgebung kommt automatisch aus der zugewiesenen Palette.</p>
+
+      <h4>Ein Beispiel</h4>
+      <p>Bei einem Feuer-Projektil wird der hellste, energetischste Teil zu einem gelb-weißen Kern, die dunkleren Raender zu tiefem Orange bis Rot. Bei einem Blitz-Projektil laeuft exakt derselbe Graustufen-Workflow — nur mit einer anderen Palette: heller Kern wird zu Cyan/Weiß, dunklere Bereiche zu tiefem Blau/Violett. Die gezeichnete Form unterscheidet sich nicht, nur die Palette dahinter.</p>
+    </div>
+
+    <div class="video-grid" style="margin-top: 28px;">
+      <div class="video-real">
+        <video controls loop muted playsinline>
+          <source src="media/projectile-1.mp4" type="video/mp4">
+        </video>
+        <div class="media-caption">Fertiges Projektil im Spiel, eingefaerbt ueber die Palette</div>
+      </div>
+      <div class="video-real">
+        <video controls loop muted playsinline>
+          <source src="media/projectile-2.mp4" type="video/mp4">
+        </video>
+        <div class="media-caption">Dieselbe Animation, andere Palettenzuweisung</div>
+      </div>
+    </div>
+    <div class="ref-image-block">
+      <img src="media/grayscale-reference.png" alt="Graustufen-Referenz-Spritesheet der Projektil-Animation" class="ref-sprite-img">
+      <div class="media-caption">Die zugrunde liegende Graustufen-Spritesheet-Animation — das ist, was der Artist tatsaechlich zeichnet</div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">04</div>
+      <div class="section-title">Beispiel: Gegner-Spritesheet</div>
+    </div>
+    <div class="body-col">
+      <p>Boss- und Gegneranimationen werden als klassisches Spritesheet angeliefert: eine Zeile pro Aktion, von oben nach unten. Alle Frames liegen in derselben Canvas-Groesse und mit demselben Pivot-Punkt, damit die Animation im Spiel sauber aufgereiht werden kann.</p>
+      <p>Am Beispiel der Fledermaus: 96×96 px pro Frame, sieben Zeilen — Idle, Walk, Uebergang in den Angriff, Angriffs-Ausfuehrung, Angriff, Treffer, Tod. Genau wie bei den Projektilen gilt: Form und Timing kommen vom Artist, das Technische — Import, Slicing, Zustandswechsel — uebernimmt danach das System. Wichtig bleibt, was schon beim visuellen Stil galt: vor jedem Angriff genug Vorbereitungs-Frames fuer eine faire Reaktionschance.</p>
+    </div>
+
+    <div class="ref-image-block" style="margin-top: 20px;">
+      <img src="media/enemy-spritesheet-bat.png" alt="Fledermaus-Spritesheet mit sieben Animationszeilen: Idle, Walk, Transition, Attack-Instance, Attack, Hurt, Death" class="ref-sprite-img">
+      <div class="media-caption">Referenz: Fledermaus-Spritesheet, 96×96 px pro Frame — Idle, Walk, Walk-to-Attack-Transition, Attack-Instance, Attack, Hurt, Death</div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">05</div>
+      <div class="section-title">Beispiel: Boden-Tilemap & Rule Tiles</div>
+    </div>
+    <div class="body-col">
+      <p>Boeden werden nicht als einzelne, handplatzierte Grafiken gemalt, sondern als zusammenhaengendes Tileset nach einem festen Raster angeliefert. Jede Kachel landet an einer festen Position im Tileset — jede Position entspricht dabei einer Zelle im Raster.</p>
+      <p>Aus diesem Raster liest das Leveldesign-System (Rule Tiles) automatisch die passende Kachel fuer jede Zelle im Level, je nachdem, was ringsherum liegt: gerade Kanten, Aussenecken, Innenecken, Einzelstuecke. Das ist die Grundlage dafuer, dass Raeume und prozedural generierte Dungeons nahtlos zusammenpassen, ohne dass jede Kachel von Hand gesetzt wird.</p>
+    </div>
+
+    <div class="ref-image-block" style="margin-top: 20px;">
+      <img src="media/tilemap-floor-example.png" alt="Beispielhafte Boden-Tilemap mit Wasser- und Steinboden, automatisch aus Rule Tiles zusammengesetzt" class="ref-sprite-img">
+      <div class="media-caption">Referenz: Boden-Tilemap — Krypta-Pfad & Uebergang zum normalen Boden</div>
+    </div>
+  </div>
+</section>
+
+<section class="closing tight">
+  <div class="wrap">
+    <h2>Eine Form, viele Elemente — der Rest ist Palette.</h2>
+    <div class="cta-row">
+      <a class="cta secondary" href="index.html">← Zurueck zur Uebersicht</a>
+      <a class="cta secondary" href="story.html">Zur Lore →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">Shardborne — Workflow & Assets · Details zu weiteren Systemen folgen bei Bedarf.</div>
+</footer>
+
+</body>
+</html>

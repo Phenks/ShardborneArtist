@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shardborne — Game Design Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav class="site-nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">Shardborne</a>
+    <div class="nav-links">
+      <a href="story.html">Lore</a>
+      <a href="workflow.html">Workflow & Assets</a>
+      <a href="gdd.html" class="active">Design Doc</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero compact">
+  <div class="wrap">
+    <div class="hero-eyebrow"><span class="rune">◆</span>Game Design Document</div>
+    <h1>Der Rahmen</h1>
+    <p class="hero-sub">Aethenveil wird von beiden Enden aufgezehrt — Goetter, die sich die Welt zurueckholen, die sie erschufen; Gelehrte, die sie mit Gewalt neu formen. Als stummer Shardborne, aufgezogen von einem Dorf, das nie aufgehoert hat, ueber dich zu wachen, jagst du maechtige Wesen durch ihre elementaren Lairs — ein Bullet-Hell-Action-RPG mit tiefer Shard-Schmiede-Progression. Bosse erinnern sich an jede Niederlage. Sie entwickeln sich weiter. Du musst es auch.</p>
+  </div>
+</header>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">01</div>
+      <div class="section-title">Genre & Zielgruppe</div>
+    </div>
+    <div class="body-col">
+      <p><strong>Genres:</strong> Roguelite, Bullet-Hell</p>
+    </div>
+
+    <div class="audience-row">
+      <div class="audience-card">
+        <h5>Der Min-Maxer</h5>
+        <p>Optimiert Builds, liest Wikis, testet Kombinationen. Will „broken" Shard-Setups bauen.</p>
+      </div>
+      <div class="audience-card">
+        <h5>Der Skill Master</h5>
+        <p>Liebt harte Herausforderungen, will das Spiel auf hoechstem Niveau schlagen. Motiviert durch Mastery & Mustererkennung.</p>
+      </div>
+      <div class="audience-card">
+        <h5>Der Sammler</h5>
+        <p>Will alle Shards, Upgrades und Lore freischalten. Motiviert durch vollstaendige Progression.</p>
+      </div>
+      <div class="audience-card">
+        <h5>Der Experimentierer</h5>
+        <p>Probiert ungewoehnliche Builds, liebt ueberraschende Synergien. Motiviert durch Entdeckung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">02</div>
+      <div class="section-title">Unique Selling Points</div>
+    </div>
+
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <h5>Spell Shaping</h5>
+        <p>Magie auf Kernebene formen. Schadenstypen, Feuermuster, Zauberverhalten und visuelle Identitaet veraendern.</p>
+      </div>
+      <div class="pillar-card">
+        <h5>Evolvierende Bosskaempfe</h5>
+        <p>Bosse starten simpel, werden aber toedlicher, je mehr Shards sie absorbieren — neue Mechaniken, Muster, Phasen, reaktive Konter.</p>
+      </div>
+      <div class="pillar-card">
+        <h5>Shards veralten nie — sie entwickeln sich</h5>
+        <p>Jeder verdiente Shard bleibt relevant. Upgrades bauen auf Bestehendem auf statt es zu ersetzen — permanente Seitengrade statt Obsoleszenz.</p>
+      </div>
+      <div class="pillar-card">
+        <h5>Progression oeffnet — Skill entscheidet</h5>
+        <p>Shardborne ist Skill-first: Shards oeffnen Wege zu staerkeren Bossen, aber Bewegung, Timing und Mustererkennung entscheiden ueber den Sieg. Kein Boss ist je trivial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">03</div>
+      <div class="section-title">Spielerlebnis</div>
+    </div>
+    <div class="body-col">
+      <h4>Setting & Fantasy</h4>
+      <p>High Fantasy, elementar gepraegte Welt — Goetter formten die Realitaet durch Shards.</p>
+
+      <h4>Emotionale Ziele</h4>
+      <p><strong>Flow & Fokus</strong> — vollstaendig vertieft, instinktives Ausweichen, „Combat Trance Mode".</p>
+      <p><strong>Mastery & Kompetenz</strong> — Bullet-Muster lernen, perfekte Ausweichmanoever, brutale Boss-Evolutionen bezwingen.</p>
+      <p><strong>Entdeckung & Empowerment</strong> — steigende Power-Level, Experimentieren mit Shard-Transformationen, neue elementare Faehigkeiten freischalten.</p>
+      <p><strong>Spannung & Erloesung</strong> — „Oh Gott, ich sterbe gleich" → „JA! GESCHAFFT!" Dramatische Ueberlebensmomente, phasenbasiertes emotionales Pacing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">04</div>
+      <div class="section-title">Setting</div>
+    </div>
+    <div class="body-col">
+      <p class="quote-line">Eine mystische Welt, geformt durch elementare Kraefte, in der gefallene Bosse magische Shards hinterlassen, die die Realitaet umformen und zur Staerkung der Shardborne (des Spielers) genutzt werden koennen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">05</div>
+      <div class="section-title">Visueller & Audio-Stil</div>
+    </div>
+    <div class="body-col">
+      <h4>Visueller Stil</h4>
+      <p>Hoher Kontrast · Klare Silhouetten · Helle Kerne, dunkle Umrisse · Elementare Identitaet durch Form und Farbe · Dynamische Beleuchtung & reaktive Zauber · Stilisierte 2D-Kunst mit Fokus auf Lesbarkeit</p>
+
+      <h4>Audio-Stil</h4>
+      <p>Reaktives Musiksystem · Boss-Themes eskalieren mit den Phasen · Der Hub ist ruhig und beruhigend · Zauber-Sounds sind elementar, lesbar, unverwechselbar · Audio-Cues fuer Telegraphs und Gefahr</p>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">06</div>
+      <div class="section-title">Plattform & Monetarisierung</div>
+    </div>
+
+    <div class="spec-list">
+      <div class="spec-row"><span class="spec-key">Plattform</span><span class="spec-val">PC & Konsole</span></div>
+      <div class="spec-row"><span class="spec-key">Steuerung</span><span class="spec-val">Controller + Tastatur/Maus</span></div>
+      <div class="spec-row"><span class="spec-key">Engine</span><span class="spec-val">Unity (2D)</span></div>
+      <div class="spec-row"><span class="spec-key">Kampfsystem</span><span class="spec-val">Twin-Stick Bullet-Hell</span></div>
+      <div class="spec-row"><span class="spec-key">Modell</span><span class="spec-val">Premium (Buy-to-Play)</span></div>
+      <div class="spec-row"><span class="spec-key">F2P-Kosmetik</span><span class="spec-val">Nur bei kuenftigem Multiplayer</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">07</div>
+      <div class="section-title">Core Loop</div>
+    </div>
+
+    <div class="loop-chain">
+      <span class="loop-node">Lair erkunden</span>
+      <span class="loop-arrow">→</span>
+      <span class="loop-node">Boss bekaempfen</span>
+      <span class="loop-arrow">→</span>
+      <span class="loop-node">Shard-Splitter sammeln</span>
+      <span class="loop-arrow">→</span>
+      <span class="loop-node">Shards schmieden/upgraden</span>
+      <span class="loop-arrow">→</span>
+      <span class="loop-node">Staerker werden</span>
+      <span class="loop-arrow">→</span>
+      <span class="loop-node">Evolvierte Boss-Varianten bekaempfen</span>
+      <span class="loop-arrow">→</span>
+      <span class="loop-node">Wiederholen</span>
+    </div>
+  </div>
+</section>
+
+<section class="closing tight">
+  <div class="wrap">
+    <h2>Ein System, das mit dem Spieler mitwaechst — genau wie die Bosse, gegen die er antritt.</h2>
+    <div class="cta-row">
+      <a class="cta secondary" href="index.html">← Zurueck zur Uebersicht</a>
+      <a class="cta secondary" href="story.html">Zur Lore →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">Shardborne — Game Design Document · Kurzfassung fuer externe Partner.</div>
+</footer>
+
+</body>
+</html>
