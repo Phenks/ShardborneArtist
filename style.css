@@ -54,6 +54,58 @@ a { color: inherit; }
   z-index: 0;
 }
 
+/* ---------- ELEMENTAL PIXEL SHARDS ---------- */
+.shard-field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+  will-change: transform;
+}
+
+.pixel-shard {
+  position: absolute;
+  opacity: 0.4;
+  image-rendering: pixelated;
+  animation-name: shard-bob, shard-pulse;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+}
+
+.shard-fire {
+  color: var(--fire);
+  filter: drop-shadow(0 0 5px rgba(255,122,60,0.55));
+}
+
+.shard-lightning {
+  color: var(--lightning);
+  filter: drop-shadow(0 0 5px rgba(95,208,221,0.55));
+}
+
+.shard-varkhe {
+  color: var(--varkhe);
+  filter: drop-shadow(0 0 5px rgba(139,122,224,0.55));
+}
+
+@keyframes shard-bob {
+  0%   { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-26px) rotate(12deg); }
+}
+
+@keyframes shard-pulse {
+  0%   { opacity: 0.22; }
+  100% { opacity: 0.62; }
+}
+
+@media (max-width: 680px) {
+  .shard-field .pixel-shard:nth-child(n+9) { display: none; }
+}
+
 /* ---------- NAV ---------- */
 .site-nav {
   position: sticky;
