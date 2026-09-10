@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Alagard';
-  src: url('fonts/alagard.ttf') format('truetype');
+  font-family: 'Fabled_Font';
+  src: url('fonts/fabled-font.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
   --fire: #ff7a3c;
   --lightning: #5fd0dd;
   --varkhe: #8b7ae0;
-  --serif: 'Alagard', 'Press Start 2P', 'Courier New', monospace;
+  --serif: 'Fabled_Font', 'Press Start 2P', 'Courier New', monospace;
   --sans: 'Inter', -apple-system, sans-serif;
 }
 
