@@ -1,11 +1,17 @@
 @font-face {
-  font-family: 'Fabled_Font';
-  src: url('fonts/fabled-font.ttf') format('truetype');
+  font-family: 'Merlin8x8';
+  src: url('fonts/merlin-8x8.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@font-face {
+  font-family: 'Merlin16x16';
+  src: url('fonts/merlin-16x16.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --bg: #0b0c10;
@@ -18,8 +24,8 @@
   --fire: #ff7a3c;
   --lightning: #5fd0dd;
   --varkhe: #8b7ae0;
-  --serif: 'Fabled_Font', 'Press Start 2P', 'Courier New', monospace;
-  --sans: 'Inter', -apple-system, sans-serif;
+  --serif: 'Merlin16x16', 'Press Start 2P', 'Courier New', monospace;
+  --sans: 'Merlin8x8', 'Courier New', monospace;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,7 +35,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--serif);
+  font-family: var(--sans);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
