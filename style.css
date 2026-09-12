@@ -30,7 +30,22 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, p, span, div, a, li, button {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
 
 body {
   background: var(--bg);
@@ -55,8 +70,8 @@ a { color: inherit; }
   inset: 0;
   pointer-events: none;
   background-image:
-    radial-gradient(ellipse 600px 400px at 15% -5%, rgba(139,122,224,0.08), transparent 60%),
-    radial-gradient(ellipse 700px 500px at 90% 15%, rgba(255,122,60,0.06), transparent 60%);
+          radial-gradient(ellipse 600px 400px at 15% -5%, rgba(139,122,224,0.08), transparent 60%),
+          radial-gradient(ellipse 700px 500px at 90% 15%, rgba(255,122,60,0.06), transparent 60%);
   z-index: 0;
 }
 
@@ -690,10 +705,10 @@ section.tight { padding: 70px 0; }
   width: 100%;
   display: block;
   background:
-    linear-gradient(45deg, #23232b 25%, transparent 25%),
-    linear-gradient(-45deg, #23232b 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #23232b 75%),
-    linear-gradient(-45deg, transparent 75%, #23232b 75%);
+          linear-gradient(45deg, #23232b 25%, transparent 25%),
+          linear-gradient(-45deg, #23232b 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #23232b 75%),
+          linear-gradient(-45deg, transparent 75%, #23232b 75%);
   background-size: 16px 16px;
   background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
   image-rendering: pixelated;

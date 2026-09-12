@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shardborne — Game Design Document</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shardborne — Game Design Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="grain"></div>
 
 <svg style="display:none">
-<symbol id="pixel-gem" viewBox="0 0 8 8">
-<rect x="3" y="0" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="4" y="0" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="2" y="1" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="5" y="1" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="1" y="2" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="6" y="2" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="0" y="3" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="7" y="3" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="1" y="4" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="6" y="4" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="2" y="5" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="5" y="5" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="3" y="6" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="4" y="6" width="1" height="1" style="fill:var(--bg)"/>
-<rect x="3" y="1" width="1" height="1" style="fill:currentColor"/>
-<rect x="4" y="1" width="1" height="1" style="fill:currentColor"/>
-<rect x="2" y="2" width="1" height="1" style="fill:currentColor"/>
-<rect x="3" y="2" width="1" height="1" style="fill:currentColor"/>
-<rect x="4" y="2" width="1" height="1" style="fill:currentColor"/>
-<rect x="5" y="2" width="1" height="1" style="fill:currentColor"/>
-<rect x="1" y="3" width="1" height="1" style="fill:currentColor"/>
-<rect x="2" y="3" width="1" height="1" style="fill:currentColor"/>
-<rect x="3" y="3" width="1" height="1" style="fill:currentColor"/>
-<rect x="4" y="3" width="1" height="1" style="fill:currentColor"/>
-<rect x="5" y="3" width="1" height="1" style="fill:currentColor"/>
-<rect x="6" y="3" width="1" height="1" style="fill:currentColor"/>
-<rect x="2" y="4" width="1" height="1" style="fill:currentColor"/>
-<rect x="3" y="4" width="1" height="1" style="fill:currentColor"/>
-<rect x="4" y="4" width="1" height="1" style="fill:currentColor"/>
-<rect x="5" y="4" width="1" height="1" style="fill:currentColor"/>
-<rect x="3" y="5" width="1" height="1" style="fill:currentColor"/>
-<rect x="4" y="5" width="1" height="1" style="fill:currentColor"/>
-</symbol>
+  <symbol id="pixel-gem" viewBox="0 0 8 8">
+    <rect x="3" y="0" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="4" y="0" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="2" y="1" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="5" y="1" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="1" y="2" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="6" y="2" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="0" y="3" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="7" y="3" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="1" y="4" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="6" y="4" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="2" y="5" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="5" y="5" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="3" y="6" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="4" y="6" width="1" height="1" style="fill:var(--bg)"/>
+    <rect x="3" y="1" width="1" height="1" style="fill:currentColor"/>
+    <rect x="4" y="1" width="1" height="1" style="fill:currentColor"/>
+    <rect x="2" y="2" width="1" height="1" style="fill:currentColor"/>
+    <rect x="3" y="2" width="1" height="1" style="fill:currentColor"/>
+    <rect x="4" y="2" width="1" height="1" style="fill:currentColor"/>
+    <rect x="5" y="2" width="1" height="1" style="fill:currentColor"/>
+    <rect x="1" y="3" width="1" height="1" style="fill:currentColor"/>
+    <rect x="2" y="3" width="1" height="1" style="fill:currentColor"/>
+    <rect x="3" y="3" width="1" height="1" style="fill:currentColor"/>
+    <rect x="4" y="3" width="1" height="1" style="fill:currentColor"/>
+    <rect x="5" y="3" width="1" height="1" style="fill:currentColor"/>
+    <rect x="6" y="3" width="1" height="1" style="fill:currentColor"/>
+    <rect x="2" y="4" width="1" height="1" style="fill:currentColor"/>
+    <rect x="3" y="4" width="1" height="1" style="fill:currentColor"/>
+    <rect x="4" y="4" width="1" height="1" style="fill:currentColor"/>
+    <rect x="5" y="4" width="1" height="1" style="fill:currentColor"/>
+    <rect x="3" y="5" width="1" height="1" style="fill:currentColor"/>
+    <rect x="4" y="5" width="1" height="1" style="fill:currentColor"/>
+  </symbol>
 </svg>
 <div class="shard-field" aria-hidden="true">
   <svg class="pixel-shard shard-fire" viewBox="0 0 8 8" shape-rendering="crispEdges" style="top:62.1%; left:4.4%; width:18px; height:18px; animation-duration:7.7s,3.4s; animation-delay:0.6s,3.0s;"><use href="#pixel-gem"></use></svg>
