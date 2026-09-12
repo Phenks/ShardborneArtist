@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Merlin8x8';
-  src: url('fonts/MerlinLight8x8.woff2') format('truetype');
+  src: url('fonts/Merlin8x8.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Merlin16x16';
-  src: url('fonts/MerlinLight8x8.woff2') format('truetype');
+  src: url('fonts/Merlin16x16.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -152,6 +152,79 @@ a { color: inherit; }
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--text);
+}
+
+.nav-burger {
+  display: none;
+  width: 36px;
+  height: 32px;
+  background: transparent;
+  border: 2px solid var(--line);
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-burger .bar {
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  height: 2px;
+  background: var(--text);
+  transition: transform 0.2s ease, opacity 0.15s ease;
+}
+
+.nav-burger .bar:nth-child(1) { top: 10px; }
+.nav-burger .bar:nth-child(2) { top: 16px; }
+.nav-burger .bar:nth-child(3) { top: 22px; }
+
+.nav-burger.open .bar:nth-child(1) {
+  top: 16px;
+  transform: rotate(45deg);
+}
+.nav-burger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-burger.open .bar:nth-child(3) {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 720px) {
+  .nav-burger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg);
+    border-top: 2px solid var(--line);
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0;
+    transform: translateY(-8px);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 16px 28px;
+    border-bottom: 1px solid var(--line);
+  }
 }
 
 /* ---------- HERO ---------- */
@@ -779,6 +852,10 @@ section.tight { padding: 70px 0; }
   .audience-row { grid-template-columns: 1fr 1fr; }
 }
 
+@media (max-width: 480px) {
+  .audience-row { grid-template-columns: 1fr; }
+}
+
 .audience-card {
   border: 2px solid var(--line);
   border-radius: 0;
@@ -914,4 +991,50 @@ h1, h2, .section-title, .nav-logo,
 .faction-card h3, .cat-card h4, .subpage-card h4,
 .boss-title, .pillar-card h5 {
   font-weight: 400;
+}
+/* ---------- GENERAL MOBILE RESPONSIVENESS ---------- */
+@media (max-width: 680px) {
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 64px 0 56px;
+  }
+
+  .hero-tags {
+    margin-top: 28px;
+  }
+
+  section {
+    padding: 56px 0;
+  }
+
+  section.tight {
+    padding: 44px 0;
+  }
+
+  .closing {
+    padding: 72px 0 64px;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta {
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-sub {
+    font-size: 16px;
+  }
+
+  .nav-logo {
+    font-size: 17px;
+  }
 }

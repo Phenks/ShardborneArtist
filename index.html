@@ -73,6 +73,11 @@
       <a href="workflow.html">Workflow & Assets</a>
       <a href="gdd.html">Design Doc</a>
     </div>
+    <button class="nav-burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
   </div>
 </nav>
 
@@ -89,6 +94,27 @@
   </div>
   <div class="scroll-cue"><span class="line"></span>Scroll für die ganze Geschichte</div>
 </header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">01 — In Aktion</div>
+      <div class="section-title">Die Combat-Demo</div>
+    </div>
+    <p class="lede">Videos folgen in Kürze — hier entsteht die Vorschau der spielbaren Demo.</p>
+
+    <div class="video-grid">
+      <div class="video-slot">
+        <div class="play-icon">▶</div>
+        <div class="video-caption">Gameplay-Video: Bullet-Hell-Kampf & Kernmechaniken</div>
+      </div>
+      <div class="video-slot">
+        <div class="play-icon">▶</div>
+        <div class="video-caption">Erkundung & Dungeon-Traversal</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
@@ -311,6 +337,28 @@
     window.addEventListener('scroll', updateShardField, { passive: true });
     window.addEventListener('resize', updateShardField);
     updateShardField();
+  })();
+</script>
+
+<script>
+  (function() {
+    var burger = document.querySelector('.nav-burger');
+    var links = document.querySelector('.nav-links');
+    if (!burger || !links) return;
+    burger.addEventListener('click', function() {
+      var isOpen = links.classList.toggle('open');
+      burger.classList.toggle('open', isOpen);
+      burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      burger.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+    });
+    links.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        links.classList.remove('open');
+        burger.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.setAttribute('aria-label', 'Menü öffnen');
+      });
+    });
   })();
 </script>
 </body>
