@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shardborne — Workflow & Assets</title>
+  <title>Shardborne — Die Welt von Aethenveil</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -69,8 +69,8 @@
   <div class="wrap nav-inner">
     <a href="index.html" class="nav-logo">Shardborne</a>
     <div class="nav-links">
-      <a href="story.html">Lore</a>
-      <a href="workflow.html" class="active">Workflow & Assets</a>
+      <a href="story.html" class="active">Lore</a>
+      <a href="workflow.html">Workflow & Assets</a>
       <a href="gdd.html">Design Doc</a>
     </div>
     <button class="nav-burger" aria-label="Menü öffnen" aria-expanded="false">
@@ -83,19 +83,24 @@
 
 <header class="hero compact">
   <div class="wrap">
-    <div class="hero-eyebrow"><span class="rune">◆</span>Workflow & Assets</div>
-    <h1>Wie gearbeitet wird</h1>
-    <p class="hero-sub">Ein Einblick in die aktuelle Struktur und wie du mitwirken könntest.</p>
+    <div class="hero-eyebrow"><span class="rune">◆</span>Lore-Zusammenfassung</div>
+    <h1>Aethenveil</h1>
+    <p class="hero-sub">Eine Welt, von Göttern geformt und von der Varkhe neu definiert. Eine grobe Übersicht über was dich erwartet.</p>
   </div>
 </header>
 
 <section class="tight">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-num">01 — Visueller Stil</div>
-      <div class="section-title">Lesbar, selbst im Chaos</div>
+      <div class="section-num">01</div>
+      <div class="section-title">Die Welt</div>
     </div>
-    <p class="lede">Hoher Kontrast, klare Silhouetten, helle Kerne mit dunklen Umrissen. Jedes Element hat seine eigene Identität durch Form und Farbe — auch in den dichtesten Bullet-Hell-Momenten muss sofort erkennbar sein, was gefährlich ist.</p>
+    <div class="body-col">
+      <p>In der Zeit vor der Erinnerung webten die <strong>Aethers</strong> die Realität aus roher Elementarkraft und kristallisierten sie zu <strong>Shards</strong>. Fragmente purer Schöpfung. Sie bauten eine Welt, bevölkerten sie, und erwarteten, dass sie ihnen gehören würde.</p>
+      <p>Das tat sie nicht. Die <strong>Varkhe</strong> entdeckten, dass sich Shards ernten, verarbeiten und neu kombinieren lassen, um ungeahnte Mächte zu entfesseln. Was niemand wusste: Durch die Neukombination dieser elementaren Energie wurde die Verknüpfung zu ihrer Quelle — den Göttern selbst — entfernt. So wurde die Essenz der Götter selbst Schritt für Schritt aus der Welt entfernt, und so trafen die Aethers eine Entscheidung: Was sich nicht kontrollieren lässt, wird ungeschehen gemacht.</p>
+      <p>Der Krieg, der folgte, ist nicht laut — es ist ein langsames Zermahlen der Welt. Zwei übermächtige Kräfte, die die Welt unter ihre Kontrolle zu bringen versuchen.</p>
+      <p>Die freien Dörfer stehen mitten dazwischen. Sie sind Helden. Sie sind Menschen, die wollen, dass die Welt morgen noch da ist.</p>
+    </div>
   </div>
 </section>
 
@@ -103,11 +108,12 @@
   <div class="wrap">
     <div class="section-head">
       <div class="section-num">02</div>
-      <div class="section-title">Die Basis: Asset-Pack</div>
+      <div class="section-title">Shards</div>
     </div>
     <div class="body-col">
-      <p>Das Spiel basiert aktuell auf <a href="https://rafaelmatos.itch.io/epic-rpg-world-collection" target="_blank" rel="noopener" style="color: var(--lightning); text-decoration: underline;">Epic RPG World Complete Collection von RafaelMatos</a>. Das ist die visuelle Grundlage für Tiles, Props und Basis-Sprites.</p>
-      <p>Ziel ist <strong>nicht</strong>, dieses Pack zu ersetzen — sondern es gezielt mit eigenen Sprites, Grafiken und Animationen zu erweitern, vor allem dort, wo es am spezifischsten für Shardborne werden muss: Boss- und Gegneranimationen, Kampfeffekte, und punktuell Props für einzelne Themenbereiche.</p>
+      <p>Shards sind kristallisierte Elementarenergie, physische Objekte, entstanden als die Aethers ihre Kraft in die Welt gossen. Sie sind Stücke der Aethers selbst, verdichtet zu Materie.</p>
+      <p>Ein Feuer-Shard <em>enthält</em> kein Feuer — er <em>ist</em> Feuer, in stabiler, kristallisierter Form. Eine Region mit großen Shard-Vorkommen wird selbst elementar, langsam und dauerhaft.</p>
+      <p>Die meisten Menschen gehen mit Shards um wie mit jeder anderen Naturressource. Ein Schmied arbeitet mit einem Feuer-Shard, um die Temperatur seiner Schmiede aufrecht zu erhalten. Ein Bauer platziert einen Wasser-Shard an Bewässerungskanälen. Generationen an Erfahrung machten daraus Routine.</p>
     </div>
   </div>
 </section>
@@ -116,40 +122,24 @@
   <div class="wrap">
     <div class="section-head">
       <div class="section-num">03</div>
-      <div class="section-title">Das Graustufen-zu-Palette-System</div>
+      <div class="section-title">Fraktionen im Detail</div>
     </div>
+
     <div class="body-col">
-      <p>... wird für alle Effekte, Objekte und Fähigkeiten, die ein Element besitzen können, verwendet. Die Idee ist es, die visuelle Sprache eines Elements zu definieren und diese konsistent auf verschiedene Assets anzuwenden.</p>
+      <h4>Die Aethers — die Götter</h4>
+      <p>Die Schöpfer von Aethenveil und im wörtlichen Sinn ein Teil davon. Jeder Shard ist ein Fragment ihrer ursprünglichen Kraft. Sie sind keine Götter, die von außen zusehen. Sie sind die Essenz, auf der die Welt aufgebaut ist, und sie versuchen mühsam, sich selbst wieder zusammenzusetzen.</p>
+      <p>Sie sind nicht böse. Sie sind verzweifelt, was von außen gleich aussieht. Sie erklären sich nicht. Sie verhandeln nicht. Sie versuchen zu korrigieren.</p>
+      <p>Gebunden an ihre Kristallform können sie jedoch nicht physisch mit der Welt interagieren.</p>
+      <p>Aus diesem Grund senden sie Konstrukte, die sie sich aus ihrer Essenz formen, um die Shards, die in der Welt verteilt sind, zu extrahieren und zu fokussieren, sodass sie zu ihrer ursprünglichen Form zurückkehren können.</p>
+      <p>Was in diesen extrahierten Regionen hinterbleibt, ist ein lebloses Ödland.</p>
 
-      <div class="note-box">
-        Der Artist zeichnet die Grundform in Graustufen (Helligkeit = Intensität) — die Farbgebung passiert danach automatisch über das Palette-System. <strong>Wichtig:</strong> Das gilt nur für bestimmte Sprite-/VFX-Kategorien, nicht für alle visuellen Elemente im Spiel.
-      </div>
+      <h4>Die Varkhe</h4>
+      <p>Vom griechischen <em>arkhe</em> — der Ursprung aller Dinge. Die Varkhe glauben, sie seien die rechtmäßigen Hüter dieses Ursprungs. Gelehrte, die zu Kriegsherren wurden. Sie wollen die Welt kontrollieren, um sie zu reparieren. Nach ihrer eigenen Definition von „repariert".</p>
+      <p>Ihre guten Werke sind real und sichtbar: Ödland wird zu Ackerland, gefährliche Regionen werden befriedet, Leben werden spürbar verbessert. Ihr Fehler liegt nicht in dem Ziel, das sie verfolgen. Er liegt in ihrem Verhältnis zu den Kosten. Sie kalkulieren, entscheiden und exekutieren — wer oder was dafür zahlen muss, ist egal, solange die Rechnung stimmt. Sie sind gefährlich, gerade weil sie überzeugt sind, im Recht zu sein, und in großem Maßstab könnten sie es sogar sein.</p>
 
-      <h4>Wie es funktioniert</h4>
-      <p>Der Artist zeichnet die Grundform komplett in Graustufen. Helligkeit steht dabei für Energie bzw. Intensität — der energetischste, intensivste Punkt einer Animation ist am hellsten, Ränder und abklingende Bereiche sind dunkler. Die Transparenz (Alpha) des Sprites bleibt dabei erhalten und wird vom System nicht verändert.</p>
-      <p>Aus diesem Graustufenbild liest das System pro Pixel die Helligkeit aus und ordnet sie einer Farbe auf einer <strong>Paletten-Rampe</strong> zu — eine geordnete Farbreihe von dunkel nach hell. Das Ergebnis: Die Form bleibt exakt gleich, aber die Farbgebung kommt automatisch aus der zugewiesenen Palette.</p>
-
-      <h4>Ein Beispiel</h4>
-      <p>Bei einem Feuer-Projektil wird der hellste, energetischste Teil zu einem gelb-weißen Kern, die dunkleren Ränder zu tiefem Orange bis Rot. Bei einem Arkanen-Projektil läuft exakt derselbe Graustufen-Workflow — nur mit einer anderen Palette. Die gezeichnete Form unterscheidet sich nicht, nur die Palette dahinter.</p>
-    </div>
-
-    <div class="video-grid" style="margin-top: 28px;">
-      <div class="video-real">
-        <video controls loop muted playsinline>
-          <source src="media/projectile-1.mp4" type="video/mp4">
-        </video>
-        <div class="media-caption">Fertiges Projektil im Spiel, eingefärbt über die Palette</div>
-      </div>
-      <div class="video-real">
-        <video controls loop muted playsinline>
-          <source src="media/projectile-2.mp4" type="video/mp4">
-        </video>
-        <div class="media-caption">Dieselbe Animation, andere Palettenzuweisung</div>
-      </div>
-    </div>
-    <div class="ref-image-block">
-      <img src="media/grayscale-reference.png" alt="Graustufen-Referenz-Spritesheet der Projektil-Animation" class="ref-sprite-img">
-      <div class="media-caption">Die zugrunde liegende Graustufen-Spritesheet-Animation ist, was der Artist tatsächlich zeichnet</div>
+      <h4>Die Shardborne & die freien Dörfer</h4>
+      <p>Keine Fraktion im politischen Sinn, einfache Menschen, die die Welt bevölkern. Sie haben gelernt, mit Shard-Energie zu leben statt sie auszubeuten, was sie in den Augen der Varkhe primitiv und für die Aethers irrelevant in diesem Krieg macht. Genau diese Unsichtbarkeit hält sie am Leben.</p>
+      <p>Der Spieler ist einer von ihnen, geboren in und aufgezogen von den Bewohnern Ashfens, mit einer Bindung, die noch niemand vollständig versteht.</p>
     </div>
   </div>
 </section>
@@ -158,16 +148,18 @@
   <div class="wrap">
     <div class="section-head">
       <div class="section-num">04</div>
-      <div class="section-title">Beispiel: Gegner-Spritesheet</div>
+      <div class="section-title">Der Protagonist</div>
     </div>
     <div class="body-col">
-      <p>Boss- und Gegneranimationen werden als klassisches Spritesheet angeliefert: eine Zeile pro Aktion, von oben nach unten. Alle Frames liegen in derselben Canvas-Größe und mit demselben Pivot-Punkt, damit die Animation im Spiel sauber aufgereiht werden kann.</p>
-      <p>Am Beispiel der Fledermaus: 96×96 px pro Frame, sieben Zeilen — Idle, Walk, Übergang in den Angriff, Angriffs-Ausführung, Angriff, Treffer, Tod. Genau wie bei den Projektilen gilt: Form und Timing kommen vom Artist, das Technische — Import, Slicing, Zustandswechsel — übernimmt danach das System. Wichtig bleibt, was schon beim visuellen Stil galt: vor jedem Angriff genug Vorbereitungs-Frames für eine faire Reaktionschance.</p>
-    </div>
+      <p>Geboren während einer Shard-Nexus-Entladung, einer unerwarteten Destabilisierung, die in einer ansonsten gewöhnlichen Nacht durch das Dorf raste. Was den Ausbruch verursachte, ist bis heute umstritten. Unumstritten ist, was er zurückließ: zwei Tote, einen kurzzeitig erschreckend veränderten Nexus, und ein Neugeborenes mit einer Bindung, die es eigentlich nicht geben dürfte.</p>
+      <p>Die Eltern überlebten nicht. Das Kind schon. Ashfen zog es groß, nicht eine Familie, sondern das ganze Dorf, so wie kleine Gemeinschaften ein Problem auffangen, das plötzlich allen gehört.</p>
 
-    <div class="ref-image-block" style="margin-top: 20px;">
-      <img src="media/enemy-spritesheet-bat.png" alt="Fledermaus-Spritesheet mit sieben Animationszeilen: Idle, Walk, Transition, Attack-Instance, Attack, Hurt, Death" class="ref-sprite-img">
-      <div class="media-caption">Referenz: Fledermaus-Spritesheet, 96×96 px pro Frame — Idle, Walk, Walk-to-Attack-Transition, Attack-Instance, Attack, Hurt, Death</div>
+      <h4>Stumm</h4>
+      <p>Der Protagonist spricht nicht. Hat es nie getan. Die Nexus-Bindung entstand, bevor die Sprache es tat — der Shard füllte den Raum, den Worte hätten einnehmen sollen. Er versteht alles. Er kann es nur nicht in Sprache zurückgeben.</p>
+
+      <h4>Die Nexus-Bindung</h4>
+      <p>Durch seine Geburt während der Entladung von Ashfens Nexus entstand bei dem Protagonisten ein resonantes Fragment, welches eine noch nicht ganz erforschte Bindung zu dem Nexus enthält — schwach, stabil und dauerhaft. Deshalb funktioniert das <strong>Scrying Orb</strong> im Dorf auch über Ashfens Mauern hinaus.</p>
+      <p>Die Bindung dient auch als Rettungsleine: Wird der Protagonist in einem Lair überwältigt, spürt das Dorf es durch das Orb — und zieht ihn zurück, bevor der Faden reißt. Bewusstlos, aber am Leben. Ein Shardborne ohne diese Bindung würde einfach sterben.</p>
     </div>
   </div>
 </section>
@@ -176,22 +168,43 @@
   <div class="wrap">
     <div class="section-head">
       <div class="section-num">05</div>
-      <div class="section-title">Beispiel: Boden-Tilemap & Rule Tiles</div>
+      <div class="section-title">Ashfen — der Hub</div>
     </div>
     <div class="body-col">
-      <p>Böden werden nicht als einzelne, handplatzierte Grafiken gemalt, sondern als zusammenhängendes Tileset nach einem festen Raster angeliefert. Jede Kachel landet an einer festen Position im Tileset — jede Position entspricht dabei einer Zelle im Raster.</p>
-      <p>Aus diesem Raster liest das Leveldesign-System (Rule Tiles) automatisch die passende Kachel für jede Zelle im Level, je nachdem, was ringsherum liegt: gerade Kanten, Außenecken, Innenecken, Einzelstücke. Das ist die Grundlage dafür, dass Räume und prozedural generierte Dungeons nahtlos zusammenpassen, ohne dass jede Kachel von Hand gesetzt wird.</p>
+      <p>Eine kleine, sture Stadt, die sich weigert zu verschwinden. Ashfen ist um einen Shard-Nexus gebaut — ein Cluster inerter, stabilisierter Shards, die das Auslaufen von Elementarenergie in der Umgebung unterdrücken. Diese Stabilität ist der Grund, warum Menschen hier leben. Sie ist auch der Grund, warum die Varkhe sie wollen.</p>
+      <p>Im Zentrum steht das <strong>Scrying Orb</strong>, verbunden mit dem Spieler über eine resonante Shard-Bindung. Die Dorfbewohner nutzen es, um Expeditionen in Echtzeit zu beobachten — der In-Game-Grund, warum NPCs Ereignisse während eines Runs kommentieren können.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">06</div>
+      <div class="section-title">Beispiel-Boss: Sorn</div>
+    </div>
+    <div class="body-col">
+      <p>Die Veiled Crypt war keine Schöpfung Sorns, sie war eine jahrhundertealte Grabstätte, lange verlassen, bevor er sie fand. Er wählte sie bewusst: kalt, dunkel und der letzte Ort, an dem jemand einen Varkhe-Forscher suchen würde, der seit zwei Jahren keinen Bericht eingereicht hat.</p>
     </div>
 
-    <div class="ref-image-block" style="margin-top: 20px;">
-      <img src="media/tilemap-floor-example.png" alt="Beispielhafte Boden-Tilemap mit Wasser- und Steinboden, automatisch aus Rule Tiles zusammengesetzt" class="ref-sprite-img">
-      <div class="media-caption">Referenz: Boden-Tilemap — Krypta-Pfad & Übergang zum normalen Boden</div>
-    </div>
+    <div class="boss-profile">
+      <div class="boss-title">Sorn, der Blasse Theoretiker</div>
+      <div class="boss-role">Varkhe-Boss · Element: Kälte & Schatten</div>
+      <p style="font-size: 14.5px; color: var(--muted);">Ein Varkhe-Forscher, der untersucht, ob sich Kälte und Schatten, zwei Elemente mit ähnlichen Eigenschaften, zu einer einzelnen Kraft vereinen lassen. Klein, unscheinbar und präzise in seinen Bewegungen, zumindest bis die Schatten sich zu bewegen beginnen.</p>
 
-    <div class="video-grid" style="margin-top: 18px;">
-      <div class="video-slot">
-        <div class="play-icon">▶</div>
-        <div class="video-caption">TilePalette: Boden malen</div>
+      <div class="arc-row">
+        <div class="arc-step">
+          <div class="arc-label">FRÜHE BEGEGNUNGEN</div>
+          <p>„Ein Shardborne. Faszinierend — ich frage mich, ob die Nexus-Bindung die Kälteresistenz beeinflusst."</p>
+        </div>
+        <div class="arc-step">
+          <div class="arc-label">MITTLERE BEGEGNUNGEN</div>
+          <p>„Du wirst zu einer wiederkehrenden Variable. Ich finde wiederkehrende Variablen ermüdend."</p>
+        </div>
+        <div class="arc-step">
+          <div class="arc-label">SPÄTE BEGEGNUNGEN</div>
+          <p>„Du bist keine Variable mehr. Du bist ein Problem, das ich zu lösen gedenke."</p>
+        </div>
       </div>
     </div>
   </div>
@@ -199,16 +212,17 @@
 
 <section class="closing tight">
   <div class="wrap">
-    <h2>Eine Form, viele Elemente — der Rest ist Palette.</h2>
+    <h2>Die Welt ist nur der Rahmen. Die Kämpfe sind die Geschichte.</h2>
+    <p class="hook-quote">Lore läuft über Umgebung, NPC-Zeilen und Gegnerdesign — nicht über Cutscenes oder Textwände.</p>
     <div class="cta-row">
       <a class="cta secondary" href="index.html">← Zurück zur Übersicht</a>
-      <a class="cta secondary" href="story.html">Zur Lore →</a>
+      <a class="cta secondary" href="gdd.html">Zum Design Doc →</a>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="wrap">Shardborne — Workflow & Assets · Details zu weiteren Systemen folgen bei Bedarf.</div>
+  <div class="wrap">Shardborne — Lore-Zusammenfassung · Vollständiger Story-Draft intern verfügbar.</div>
 </footer>
 
 <script>
