@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Merlin8x8';
-  src: url('fonts/merlin-8x8.ttf') format('truetype');
+  src: url('fonts/MerlinLight8x8.woff2') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Merlin16x16';
-  src: url('fonts/merlin-16x16.ttf') format('truetype');
+  src: url('fonts/MerlinLight8x8.woff2') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
