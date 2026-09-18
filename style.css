@@ -1098,29 +1098,24 @@ h1, h2, .section-title, .nav-logo,
     padding: 0 0 28px;
   }
 
-  .hero-tags {
-    margin-top: 28px;
-  }
-
   .hero-bottom-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    margin: 0;
     padding: 0 20px;
   }
 
   .hero-bottom-row .hero-tags {
-    margin-top: 0;
-    justify-content: flex-start;
-    order: 1;
+    display: none;
   }
 
   .hero-bottom-row .hero-play-btn {
-    order: 2;
+    order: 1;
   }
 
   .hero-bottom-row .scroll-cue {
-    order: 3;
+    order: 2;
   }
 
   section {
